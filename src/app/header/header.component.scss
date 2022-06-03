@@ -13,6 +13,18 @@ header {
     }
 }
 
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    img {
+        height: 40px;
+    }
+}
+
 .link-box {
     display: flex;
     a {

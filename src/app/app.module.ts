@@ -10,6 +10,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { IntroComponent } from './intro/intro.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     ImprintComponent,
     DataProtectionComponent,
     IntroComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,

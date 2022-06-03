@@ -30,8 +30,8 @@
 
 .intro-text-box {
     z-index: 2;
-    padding-left: 7%;
-    h1 {
+    padding-left: 8%;
+    h2 {
         line-height: 150%;
     }
 }
@@ -43,13 +43,24 @@
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all 125ms ease-in-out;
+    text-decoration: none;
+    color: white;
+    animation: animate-button 3s infinite;
     img {
         object-fit: contain;
         width: 50px;
         margin-top: 12px;
     }
-    &:hover{
-        transform: scale(1.03);
+}
+
+@keyframes animate-button {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
     }
 }

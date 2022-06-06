@@ -1,0 +1,11 @@
+<div class="skillset-container page-padding">
+    <div class="skillset-description">
+        <h2>Skillset</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo reprehenderit tempora atque debitis, quas
+            saepe facilis officiis ex! Consectetur saepe aperiam ipsum ab eos repellendus eum iste nemo quasi pariatur.
+        </p>
+    </div>
+    <div class="skills-container">
+        <app-skill *ngFor="let skill of skills; let i = index" [img]="skills[i].img" [headline]="skills[i].headline" [description]="skills[i].description"></app-skill>
+    </div>
+</div>

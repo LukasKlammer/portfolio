@@ -1,0 +1,18 @@
+.skillset-container {
+    display: flex;
+    background-color: #000000;
+    color: white !important;
+    gap: 50px;
+}
+
+.skillset-description {
+    width: 33%;
+}
+
+.skills-container {
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}

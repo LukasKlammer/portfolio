@@ -1,0 +1,10 @@
+:host {
+    width: calc(50% - 50px);
+    img {
+        width: 40px;
+        object-fit: contain;
+    }
+    p {
+        line-height: 150%;
+    }
+}

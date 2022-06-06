@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    height: 600px;
+    background-color: #ffffff;
+    img {
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+.about-me-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        margin: 0;
+    }
+    a {
+        color: black;
+    }
+}

@@ -4,12 +4,10 @@
             <h5 class="font-color-lightgray">MY PROJECTS</h5>
             <h2>Work that I've done for the last years</h2>
         </div>
-        <app-project-card></app-project-card>
-        <app-project-card></app-project-card>
+        <app-project-card *ngFor="let i of [0, 1]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
     </div>
     <div class="right-container">
-        <app-project-card></app-project-card>
-        <app-project-card></app-project-card>
+        <app-project-card *ngFor="let i of [2, 3]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
         <button class="alternative-button">VIEW ALL PROJECTS</button>
     </div>
 </div>

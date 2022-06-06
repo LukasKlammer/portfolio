@@ -28,7 +28,6 @@ export class SkillsetComponent implements OnInit {
       headline: 'Photography',
       description: 'Clicking pictures really bring out the creative in me. Photography really makes you look and percieve thins in a different way.'
     },
-
   ];
 
   constructor() { }

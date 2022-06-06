@@ -2,6 +2,21 @@
     display: block;
     background-color: white;
     position: relative;
+    cursor: pointer;
+    p {
+        margin: 0;
+    }
+}
+
+.project-headline-description {
+    padding: 32px;
+    h3 {
+        margin: 0;
+        padding: 0px 0px 16px 0px;
+    }
+    p {
+        padding: 0px 15px 0px 0px;
+    }
 }
 
 .project-image {
@@ -14,11 +29,15 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #5221E6;
     img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 
 }

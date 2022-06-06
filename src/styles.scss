@@ -43,3 +43,38 @@ a {
 .font-color-lightgray {
     color: #5B6876;
 }
+
+.primary-button {
+    background-color: #5221E6;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    border-style: solid;
+    cursor: pointer;
+    &:hover{
+        background-color: #1E0079;
+    }
+    &:disabled {
+        background-color: #B9ABE6;
+    }
+}
+
+.alternative-button {
+    background-color: white;
+    padding: 11px 23px;
+    border-radius: 4px;
+    color: #5221E6;
+    border-color: #5221E6;
+    border-style: solid;
+    cursor: pointer;
+    &:hover{
+        background-color: #5221E6;
+        color: white;
+    }
+    &:disabled {
+        background-color: #EDEDED;
+        color: #B9ABE6;
+        border-color: #B9ABE6;
+    }
+}

@@ -1,32 +1,10 @@
-.projects-container {
-    padding-top: 150px;
-    display: flex;
-    gap: 24px;
+
+.projects-button {
+    border-radius: 0;
     background-color: black;
     color: white;
-}
-
-.left-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
-
-.right-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    button {
-        border-radius: 0;
-        background-color: black;
-        color: white;
-        border-color: #1F0C56;
-        &:hover{
-            background-color: rgb(37, 37, 37);
-        }
+    border-color: #1F0C56;
+    &:hover{
+        background-color: rgb(37, 37, 37);
     }
 }

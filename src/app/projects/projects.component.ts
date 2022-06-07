@@ -28,7 +28,6 @@ export class ProjectsComponent implements OnInit {
       headline: 'T-Box Mobile Design',
       description: 'I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.'
     },
-
   ];
 
   constructor() { }

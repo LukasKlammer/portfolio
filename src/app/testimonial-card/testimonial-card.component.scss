@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    background-color: white;
+}
+
+.testimonial-card-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.testimonial-card-texts {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    p {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 48px;
+    }
+}
+
+.name-text {
+    font-weight: bold;
+    padding-bottom: 6px;
+}

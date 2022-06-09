@@ -1,0 +1,56 @@
+h2 {
+  margin: 0;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 35px;
+}
+
+label {
+  font-size: 12px;
+}
+
+input, textarea {
+  background-color: #181823;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  resize: none;
+  padding: 12px;
+  &:focus-visible {
+    outline: none;
+    border: 1px solid #5221E6;
+    border-radius: 2px;
+  }
+  &:not(:placeholder-shown):not(:focus):invalid {
+    border: 1px solid #F34E4E;
+    background: url("../../assets/img/warning.png") no-repeat 95% 50% #181823;
+    background-size: 25px;
+  }
+}
+
+button {
+  border: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}

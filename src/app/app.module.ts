@@ -17,6 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     ProjectsComponent,
     ProjectCardComponent,
     TestimonialsComponent,
-    TestimonialCardComponent
+    TestimonialCardComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

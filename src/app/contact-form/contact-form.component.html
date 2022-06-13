@@ -4,20 +4,44 @@
     <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
   </div>
   <div class="right-container">
-    <form onsubmit="">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="label-input">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Gib deinen Namen ein." required>
+        <input
+          type="text"
+          placeholder="Please enter your name..."
+          id="name"
+          required
+          [(ngModel)]="contact.name"
+          name="name"
+          #name="ngModel"
+        />
       </div>
       <div class="label-input">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Gib deine E-Mail-Adresse ein." required>
+        <input
+          type="email"
+          placeholder="What is your Email adress?"
+          id="email"
+          [(ngModel)]="contact.email"
+          name="email"
+          #email="ngModel"
+          required
+        />
       </div>
       <div class="label-input">
         <label for="message">Message</label>
-        <textarea name="" id="message" name="message" placeholder="Deine Nachricht an mich." required></textarea>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Your message..."
+          required
+          [(ngModel)]="contact.message"
+          name="message"
+          #message="ngModel"
+        ></textarea>
       </div>
-      <button class="primary-button">LET'S GET STARTED</button>
+      <button class="primary-button" type="submit">LET'S GET STARTED</button>
     </form>
   </div>
 </div>

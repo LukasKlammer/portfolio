@@ -24,7 +24,7 @@ input, textarea {
   border: none;
   border-radius: 2px;
   color: white;
-  resize: none;
+  resize: vertical;
   padding: 12px;
   &:focus-visible {
     outline: none;

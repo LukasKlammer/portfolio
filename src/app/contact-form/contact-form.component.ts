@@ -21,7 +21,7 @@ export class ContactFormComponent implements OnInit {
    * a post request construct configuration (where to send the post)
    */
   post = {
-    endPoint: 'http://lukas-klammer.developerakademie.net/portfolio/send_mail.php', // where to send the post request (http or https)
+    endPoint: 'https://lukas-klammer.developerakademie.net/portfolio/send_mail.php', // where to send the post request (http or https)
     body: (payload: any) => JSON.stringify(payload), // what to send, notive JSON.stringify
     options: { // how to send, notice Content-Type and responseType
       headers: {

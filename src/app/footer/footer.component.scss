@@ -1,4 +1,46 @@
-div {
-    height: 422px;
+footer {
     background-color: #181823;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
+.social-media-icons {
+  display: flex;
+  gap: 24px;
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.legal-notice-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container-right {
+  display: flex;
+  gap: 150px;
+  a {
+    color: white;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+

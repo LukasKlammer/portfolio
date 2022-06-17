@@ -37,11 +37,12 @@
           placeholder="Your message..."
           required
           [(ngModel)]="contact.message"
+          rows="3"
           name="message"
           #message="ngModel"
         ></textarea>
       </div>
-      <button class="primary-button" type="submit">LET'S GET STARTED</button>
+      <button class="primary-button" type="submit" [disabled]="!contactForm.valid">LET'S GET STARTED</button>
     </form>
   </div>
 </div>

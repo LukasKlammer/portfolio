@@ -1,21 +1,29 @@
 .skillset-container {
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #000000;
-    color: white !important;
-    gap: 50px;
-
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #000000;
+  color: white !important;
+  gap: 50px;
 }
 
 .skillset-description {
-    width: 33%;
+  width: 33%;
 }
 
 .skills-container {
-    margin-top: 40px;
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
+  margin-top: 40px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (max-width: 700px) {
+  .skillset-container {
+    display: block;
+  }
+  .skillset-description {
+    width: unset;
+  }
 }

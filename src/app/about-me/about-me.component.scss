@@ -1,22 +1,42 @@
 :host {
-    display: flex;
-    height: 600px;
-    background-color: #ffffff;
-    img {
-        width: 50%;
-        object-fit: cover;
-    }
+  display: flex;
+  height: 600px;
+  background-color: #ffffff;
+
+  img {
+    width: 50%;
+    object-fit: cover;
+    object-position: 30% 50%;
+  }
 }
 
 .about-me-container {
-    width: 50%;
-    display: flex;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+@media (max-width: 700px) {
+  :host {
     flex-direction: column;
-    justify-content: center;
-    h2 {
-        margin: 0;
+    height: 100vh;
+    img {
+      width: 100%;
+      height: 50%;
     }
-    a {
-        color: black;
-    }
+  }
+
+  .about-me-container {
+    width: 100%;
+    height: 50%;
+  }
 }

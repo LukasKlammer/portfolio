@@ -55,3 +55,13 @@ button {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
+
+@media (max-width: 700px) {
+  form {
+    padding-bottom: 50px;
+  }
+
+  button {
+    height: 60px;
+  }
+}

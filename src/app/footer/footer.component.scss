@@ -44,3 +44,8 @@ footer {
   gap: 40px;
 }
 
+@media (max-width: 700px) {
+  .container-right {
+    gap: 30px;
+  }
+}

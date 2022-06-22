@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss']
 })
-export class ContactFormComponent implements OnInit {
+export class ContactFormComponent {
 
   /**
    * This is bind ngForm's InputFields in Template File
@@ -33,8 +33,8 @@ export class ContactFormComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-  }
+
+
 
   /**
    *

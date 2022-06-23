@@ -12,13 +12,13 @@ export class TestimonialsComponent implements OnInit {
       img: 'assets/img/team.jpg',
       statement: '"Lukas is a very skilled and hard working teacher, his main skills are to be found in digital learning and teaching. He was an important force in building up a progressive and well working system of digital learning in the secondary-school “Dr. Josef Röd” in Bruneck, Italy."',
       name: 'Stefan Keim',
-      role: 'school leader'
+      role: 'headmaster'
     },
     {
       img: 'assets/img/team.jpg',
       statement: '"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam velit, architecto aliquid, blanditiis voluptatem ipsa unde corrupti natus enim quia quibusdam dignissimos quo. Beatae veniam, pariatur perferendis deserunt accusamus distinctio?"',
       name: 'Stefan Keim',
-      role: 'school leader'
+      role: ''
     },
     {
       img: 'assets/img/team.jpg',

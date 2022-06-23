@@ -43,7 +43,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

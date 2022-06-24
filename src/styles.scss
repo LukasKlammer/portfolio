@@ -136,6 +136,10 @@ p {
   line-height: 1.5;
 }
 
+html:not([data-lt-script-installed]):not(.__lt-dummy-1):not(.__lt-dummy-2):not(.__lt-dummy-3):not(.__lt-dummy-4):not(.__lt-dummy-5):not(.__lt-dummy-6):not(.__lt-dummy-1654869771686) lt-mirror{
+  display: none !important;
+}
+
 @media (max-width: 800px) {
   .page-padding {
     padding: 0px 16px 0px 16px;

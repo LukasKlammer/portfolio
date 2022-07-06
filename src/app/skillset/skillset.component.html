@@ -5,6 +5,6 @@
         </p>
     </div>
     <div class="skills-container">
-        <app-skill *ngFor="let skill of skills; let i = index" [img]="skills[i].img" [headline]="skills[i].headline" [description]="skills[i].description"></app-skill>
+        <app-skill data-aos="fade-right" data-aos-duration="1000" *ngFor="let skill of skills; let i = index" [img]="skills[i].img" [headline]="skills[i].headline" [description]="skills[i].description"></app-skill>
     </div>
 </div>

@@ -3,14 +3,16 @@
   height: 600px;
   background-color: #ffffff;
 
+
   img {
     width: 50%;
     object-fit: cover;
-    object-position: 30% 50%;
+    object-position: 50% 10%;
   }
 }
 
 .about-me-container {
+  box-sizing: border-box;
   width: 50%;
   display: flex;
   flex-direction: column;

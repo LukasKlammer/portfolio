@@ -1,13 +1,13 @@
 <div class="black-section-container page-padding mobile-show-column">
     <div class="left-container" id="projects">
-        <div>
+        <div data-aos="fade-up">
             <h5 class="font-color-lightgray">MY PROJECTS</h5>
             <h2>Work that I've done for the last years</h2>
         </div>
-        <app-project-card *ngFor="let i of [0, 1]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
+        <app-project-card data-aos="fade-up" *ngFor="let i of [0, 1]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
     </div>
     <div class="right-container">
-        <app-project-card *ngFor="let i of [2, 3]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
+        <app-project-card data-aos="fade-up" *ngFor="let i of [2, 3]" [img]="projects[i].img" [headline]="projects[i].headline" [description]="projects[i].description"></app-project-card>
         <!-- <button class="alternative-button projects-button">VIEW ALL PROJECTS</button> -->
     </div>
 </div>

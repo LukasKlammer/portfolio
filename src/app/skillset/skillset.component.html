@@ -1,10 +1,10 @@
 <div class="skillset-container page-padding">
-    <div class="skillset-description" id="skillset">
+    <div class="skillset-description" id="skillset" data-aos="fade-up">
         <h2>Skillset</h2>
         <p> With a broadly diversified skillset of different soft- and hard skills in the developer field, I am the perfect person to hire, if you have to implement an exciting software project.
         </p>
     </div>
     <div class="skills-container">
-        <app-skill data-aos="fade-right" data-aos-duration="1000" *ngFor="let skill of skills; let i = index" [img]="skills[i].img" [headline]="skills[i].headline" [description]="skills[i].description"></app-skill>
+        <app-skill data-aos="fade-up" data-aos-duration="1000" *ngFor="let skill of skills; let i = index" [img]="skills[i].img" [headline]="skills[i].headline" [description]="skills[i].description"></app-skill>
     </div>
 </div>

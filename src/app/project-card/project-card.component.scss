@@ -1,43 +1,65 @@
-:host {
-    display: block;
-    background-color: white;
-    position: relative;
-    cursor: pointer;
-    p {
-        margin: 0;
-    }
+.project-card {
+  display: block;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  transition: box-shadow 125ms ease-in-out;
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    -webkit-box-shadow: 7px 5px 10px 0px #858585;
+    -moz-box-shadow: 7px 5px 10px 0px #858585;
+    -o-box-shadow: 7px 5px 10px 0px #858585;
+    box-shadow: 7px 5px 10px 0px #858585;
+  }
+
 }
 
 .project-headline-description {
-    padding: 32px;
-    h3 {
-        margin: 0;
-        padding: 0px 0px 16px 0px;
-    }
-    p {
-        padding: 0px 15px 0px 0px;
-    }
+  padding: 32px;
+
+  h3 {
+    margin: 0;
+    padding: 0px 0px 16px 0px;
+  }
+
+  p {
+    padding: 0px 15px 0px 0px;
+  }
+}
+
+.img-wrapper {
+  display: inline-block;
+  /* change the default display type to inline-block */
+  overflow: hidden;
+  /* hide the overflow */
+  width: 100%;
+  height: 700px;
 }
 
 .project-image {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
+  transition: all 125ms ease-in-out;
 }
 
 .open-button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5221E6;
-    img {
-        width: 18px;
-        height: 18px;
-    }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5221E6;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
 
 }

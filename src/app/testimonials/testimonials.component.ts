@@ -22,7 +22,7 @@ export class TestimonialsComponent {
     },
     {
       img: 'assets/img/focus_work.jpg',
-      statement: '"All I can say that, Lukas works works purposefully, deliberately and with focus, always looking for meaning in what he does."',
+      statement: '"All I can say is that Lukas remains determined, thoughtful and focused on his work, always looking for meaning in what he does."',
       name: 'Claudia Rieder',
       role: 'Head of BYOD department'
     },

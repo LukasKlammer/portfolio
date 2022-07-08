@@ -10,7 +10,6 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { IntroComponent } from './intro/intro.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsetComponent } from './skillset/skillset.component';
 import { SkillComponent } from './skill/skill.component';
@@ -29,7 +28,6 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ImprintComponent,
     DataProtectionComponent,
     IntroComponent,
-    WorkExperienceComponent,
     AboutMeComponent,
     SkillsetComponent,
     SkillComponent,

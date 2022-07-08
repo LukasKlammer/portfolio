@@ -132,8 +132,9 @@ a {
   }
 }
 
-p {
+p, span {
   line-height: 1.5;
+  font-size: 18px;
 }
 
 html:not([data-lt-script-installed]):not(.__lt-dummy-1):not(.__lt-dummy-2):not(.__lt-dummy-3):not(.__lt-dummy-4):not(.__lt-dummy-5):not(.__lt-dummy-6):not(.__lt-dummy-1654869771686) lt-mirror{

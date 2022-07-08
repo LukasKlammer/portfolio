@@ -1,3 +1,10 @@
 .gap-60 {
     gap: 60px;
 }
+
+@media (max-width: 800px) {
+  div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

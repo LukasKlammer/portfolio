@@ -1,13 +1,15 @@
 <div class="intro-bg-square page-padding" id="intro">
     <div class="intro-text-box">
-        <h2>I'm Lukas Klammer. A Frontend Developer based in Europe.</h2>
-        <p>I'm a passionate cross platform developer. You have a great project that needs my skills? Contact me.</p>
+        <h2 data-aos="fade-left">I'm Lukas Klammer. A Frontend Developer based in Europe.</h2>
+        <p data-aos="fade-left">I'm a passionate cross platform developer. You have a great project that needs my skills? Contact me.</p>
     </div>
 </div>
 
-<img class="intro-image" src="assets/img/coding.jpg" alt="intro-image">
+<div class="intro-image-wrapper">
+  <img *ngIf="showImage" class="intro-image" src="{{ images[currentImage] }}" alt="intro-image">
+</div>
 
 <a class="more" href="#about-me">
     <span>discover more</span>
-    <img src="assets/img/arrow.png" alt="">
+    <img src="assets/img/arrow.png" alt="arrow-to-bottom">
 </a>

@@ -7,9 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProjectCardComponent {
 
-  @Input() img:string = 'assets/img/logo_white.png';
-  @Input() headline:string = 'skill headline';
-  @Input() description:string = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo reprehenderit tempora atque debitis, quas saepe facilis officiis ex! Consectetur saepe aperiam ipsum ab eos repellendus eum iste nemo quasi pariatur.';
+  @Input() project =     {
+    img: 'assets/img/projects/el-pollo-loco.png',
+    headline: 'El Pollo Loco',
+    description: 'El Pollo Loco is a jump and run game programmed in JavaScript and with object-orientated programming.',
+    url: 'https://www.google.com'
+  };
 
 
   isHovered = false;
@@ -22,6 +25,10 @@ export class ProjectCardComponent {
 
   public hoverEffectOff() {
     this.isHovered = false;
+  }
+
+  public openProject() {
+    window.open(this.project.url, '_blank');
   }
 
 }

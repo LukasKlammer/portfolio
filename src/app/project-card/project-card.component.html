@@ -1,12 +1,12 @@
-<div class="project-card" (mouseover)="hoverEffectOn()" (mouseleave)="hoverEffectOff()">
+<a class="project-card" (mouseover)="hoverEffectOn()" (mouseleave)="hoverEffectOff()" (click)="openProject()">
   <div class="img-wrapper">
-    <img [ngStyle]="isHovered && {'transform': 'scale(1.02)'}" class="project-image" src=" {{ img }}" alt="">
+    <img [ngStyle]="isHovered && {'transform': 'scale(1.02)'}" class="project-image" src=" {{ project.img }}" alt="">
   </div>
   <div class="project-headline-description">
-      <h3 class="font-color-darkgrey"> {{ headline }}</h3>
-      <p class="font-color-lightgray"> {{ description }} </p>
+      <h3 class="font-color-darkgrey"> {{ project.headline }}</h3>
+      <p class="font-color-lightgray"> {{ project.description }} </p>
   </div>
   <div class="open-button">
       <img src="assets/img/arrow_north-east.png" alt="">
   </div>
-</div>
+</a>

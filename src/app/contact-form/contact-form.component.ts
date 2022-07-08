@@ -47,11 +47,12 @@ export class ContactFormComponent {
         .subscribe({
           next: (response) => {
             console.log(response);
-            // this.openSnackBar('Hallo', 'Wert 2');
+            alert('Thank you, your message was send successfully.');
             // Here Message was send
           },
           error: (error) => {
             console.error(error);
+            alert('Error! Your message was not send. Please try it later.');
             // Here Message was not send
           },
           complete: () => console.info('send post complete'),
@@ -61,6 +62,5 @@ export class ContactFormComponent {
 
   public openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action);
-
   }
 }

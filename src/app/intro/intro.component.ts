@@ -36,11 +36,9 @@ export class IntroComponent implements OnInit {
   }
 
   private preload() {
-    console.log('Preload wird ausgeführt.');
     for (let i = 0; i <= 2; i++) {
       let img = new Image();
       img.src = `assets/img/intro/coding_${i}.jpg`;
-      console.log(img);
     }
   }
 

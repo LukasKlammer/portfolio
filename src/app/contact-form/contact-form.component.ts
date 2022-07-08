@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact-form',
@@ -31,7 +32,7 @@ export class ContactFormComponent {
     },
   };
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private _snackBar: MatSnackBar) {   }
 
 
 
@@ -46,6 +47,7 @@ export class ContactFormComponent {
         .subscribe({
           next: (response) => {
             console.log(response);
+            // this.openSnackBar('Hallo', 'Wert 2');
             // Here Message was send
           },
           error: (error) => {
@@ -55,5 +57,10 @@ export class ContactFormComponent {
           complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  public openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action);
+
   }
 }

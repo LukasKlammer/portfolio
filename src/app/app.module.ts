@@ -18,6 +18,9 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

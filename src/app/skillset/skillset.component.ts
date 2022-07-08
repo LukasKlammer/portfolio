@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-skillset',
   templateUrl: './skillset.component.html',
   styleUrls: ['./skillset.component.scss']
 })
-export class SkillsetComponent implements OnInit {
+export class SkillsetComponent {
 
   skills = [
     {
@@ -16,27 +16,27 @@ export class SkillsetComponent implements OnInit {
     {
       img: 'assets/img/skillset/angular.png',
       headline: 'Angular',
-      description: 'In 2022 I started to learn Angular to build business applications with many different components to simple work of people.'
+      description: 'In 2022 I started to learn Angular to build business applications with many components to simple work of people.'
     },
     {
       img: 'assets/img/skillset/html.png',
       headline: 'HTML / CSS',
-      description: 'I startet my first HTML / CSS experience years ago as am member of the informatics workgroup in a volunteer organisation.'
+      description: 'I started my first HTML / CSS experience years ago as am member of the informatics workgroup in a volunteer organization .'
     },
     {
       img: 'assets/img/skillset/scrum.png',
       headline: 'SCRUM',
-      description: 'Working as a key user and first level supporter in my school district has taught me a lot how to plan the work efficient and how to improve the organisation day for day.'
+      description: 'Working as a key user and first level supporter in my school district has taught me a lot how to plan the work efficient and how to improve the organization day for day.'
     },
     {
       img: 'assets/img/skillset/git.png',
       headline: 'Git',
-      description: 'My coaches at Developer Akademie explained us the benefits and opportunities from using version control software. We used in many group projects GitHub with the local installed software Git.'
+      description: 'Our group and individual projects showed us the benefits and opportunities from using version control software. We used in many group projects GitHub with the local installed software Git.'
     },
     {
       img: 'assets/img/skillset/design_thinking.png',
       headline: 'Design Thinking',
-      description: 'As a frontend software developer we build software that people will interact with. The design is very importend to raise user experience and the pleasure to be used. I learned to build attractive and smart web-apps.'
+      description: 'As a frontend software developer we build software that people will interact with. The design is important to raise user experience and the pleasure to be used. I learned to build attractive and smart web-apps.'
     },
     {
       img: 'assets/img/skillset/api.png',
@@ -46,23 +46,21 @@ export class SkillsetComponent implements OnInit {
     {
       img: 'assets/img/skillset/test_automation.png',
       headline: 'Test automation',
-      description: 'I learnet the basics oft Angular test automation to check the status of my app.'
+      description: 'I used Angular test automation to check the status of my app.'
     },
     {
       img: 'assets/img/skillset/database.png',
       headline: 'Databases',
-      description: 'In my projects I used Firebase Cloud Firestore to save and load data. '
+      description: 'In my projects I utilized Firebase Cloud Firestore to save and load data.'
     },
     {
       img: 'assets/img/skillset/social_competence.png',
       headline: 'Social Competence',
-      description: 'My studies and my experience at school has helped me learn how to work with different people and colleagues. I am good at giving constructive feedback, public speaching, time management, organization and leadership.'
+      description: 'My studies and my experience at school has helped me learn how to work with different people and colleagues and to improve my organization skills.'
     },
   ];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

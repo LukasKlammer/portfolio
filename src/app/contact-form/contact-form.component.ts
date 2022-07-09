@@ -44,18 +44,23 @@ export class ContactFormComponent {
         .post(this.post.endPoint, this.post.body(this.contact))
         .subscribe({
           next: (response) => {
-            console.log(response);
-            alert('Thank you, your message was send successfully.');
-            // Here Message was send
+            this.showSnackBar('Thank you, your message was send successfully.');
           },
           error: (error) => {
-            console.error(error);
-            alert('Error! Your message was not send. Please try it later.');
-            // Here Message was not send
+            this.showSnackBar('Error! Your message was not send. Please try it later.');
           },
           complete: () => console.info('send post complete'),
         });
     }
+  }
+
+  private showSnackBar(message: string) {
+  let snackbar = document.getElementById("snackbar");
+  snackbar.innerHTML = message;
+  snackbar.className = "show"; // add show class to DIV
+  setTimeout(function(){ // After timeout, remove the show class from DIV
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 7000);
   }
 
 }

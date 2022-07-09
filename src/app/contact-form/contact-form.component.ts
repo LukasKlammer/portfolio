@@ -1,7 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
-
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
@@ -32,7 +30,7 @@ export class ContactFormComponent {
     },
   };
 
-  constructor(private http: HttpClient, private _snackBar: MatSnackBar) {   }
+  constructor(private http: HttpClient) {   }
 
 
 
@@ -60,7 +58,4 @@ export class ContactFormComponent {
     }
   }
 
-  public openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action);
-  }
 }

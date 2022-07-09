@@ -93,12 +93,10 @@
     align-items: flex-start;
   }
 
-  .intro-image {
+  .intro-image-wrapper {
     width: 100%;
+    top: 150px;
     max-height: 40%;
-    top: 90px;
-    object-fit: cover;
-    object-position: top;
   }
 
   .intro-bg-square {
@@ -117,8 +115,8 @@
 }
 
 @media (max-width: 450px) {
-  .intro-image {
-    max-height: 30%;
+  .intro-image-wrapper {
+    max-height: 35%;
   }
 
   .intro-text-box {

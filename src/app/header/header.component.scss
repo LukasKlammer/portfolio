@@ -36,3 +36,13 @@ header {
         }
     }
 }
+
+.mobile-d-none {
+  display: block;
+}
+
+@media (max-width: 620px) {
+  .mobile-d-none {
+    display: none;
+  }
+}

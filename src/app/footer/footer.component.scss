@@ -64,3 +64,9 @@ a:hover {
     gap: 20px;
   }
 }
+
+@media (max-width: 430px) {
+  .container-right {
+    flex-direction: column;
+  }
+}

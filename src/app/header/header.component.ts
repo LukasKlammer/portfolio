@@ -1,24 +1,22 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   isMobile:boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
-  @HostListener("window:resize", []) updateDays() {
-    if (window.innerWidth >= 700) {
-      this.isMobile = false;
-    } else if (window.innerWidth < 700) {
-      this.isMobile = true;
-    }
-  }
+  // @HostListener("window:resize", []) updateDays() {
+  //   if (window.innerWidth >= 700) {
+  //     this.isMobile = false;
+  //   } else if (window.innerWidth < 700) {
+  //     this.isMobile = true;
+  //   }
+  // }
 }

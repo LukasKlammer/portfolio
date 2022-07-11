@@ -141,6 +141,26 @@ html:not([data-lt-script-installed]):not(.__lt-dummy-1):not(.__lt-dummy-2):not(.
   display: none !important;
 }
 
+@media(max-width: 900px) {
+  .legacy-container {
+    padding-top: 100px !important;
+    word-wrap: break-word;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 800px) {
   .page-padding {
     padding: 0px 16px 0px 16px;

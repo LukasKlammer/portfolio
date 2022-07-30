@@ -2,8 +2,9 @@
     <div data-aos="fade-up" class="left-container" id="testimonials">
         <h2>This is what people say about me</h2>
         <p>Here are a few lines from people who I have worked with over past 7+ years in my career.</p>
+        <app-testimonial-card data-aos="fade-up" *ngFor="let i of [0]" [img]="testimonials[i].img" [statement]="testimonials[i].statement" [name]="testimonials[i].name" [role]="testimonials[i].role"></app-testimonial-card>
     </div>
     <div class="right-container gap-60">
-        <app-testimonial-card data-aos="fade-up" *ngFor="let testimonial of testimonials; let i = index" [img]="testimonials[i].img" [statement]="testimonials[i].statement" [name]="testimonials[i].name" [role]="testimonials[i].role"></app-testimonial-card>
+        <app-testimonial-card data-aos="fade-up" *ngFor="let i of [1, 2]" [img]="testimonials[i].img" [statement]="testimonials[i].statement" [name]="testimonials[i].name" [role]="testimonials[i].role"></app-testimonial-card>
     </div>
 </div>

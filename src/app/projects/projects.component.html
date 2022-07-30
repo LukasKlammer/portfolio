@@ -4,11 +4,10 @@
             <h5 class="font-color-lightgray">MY PROJECTS</h5>
             <h2>Work that I've done for the last years</h2>
         </div>
-        <app-project-card data-aos="fade-up" *ngFor="let i of [0, 1]" [project]="projects[i]"></app-project-card>
+        <app-project-card data-aos="fade-up" *ngFor="let i of [0, 1, 2]" [project]="projects[i]"></app-project-card>
     </div>
     <div class="right-container">
-        <app-project-card data-aos="fade-up" *ngFor="let i of [2, 3]" [project]="projects[i]"></app-project-card>
-        <!-- <button class="alternative-button projects-button">VIEW ALL PROJECTS</button> -->
+        <app-project-card data-aos="fade-up" *ngFor="let i of [3, 4, 5]" [project]="projects[i]"></app-project-card>
     </div>
 </div>
 

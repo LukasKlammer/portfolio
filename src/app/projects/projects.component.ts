@@ -32,6 +32,18 @@ export class ProjectsComponent {
       description: 'The portfolio Website is based on the framework Angular and typescript. Here you can get to know me and my projects.',
       url: 'https://lukas-klammer.com'
     },
+    {
+      img: 'assets/img/projects/docbook.jpg',
+      headline: 'DocBook',
+      description: 'The DocBook Web-App is coded with Angular. Google Cloud Firestore is used as a NoSQL Database and the App is also hosted on Firebase.',
+      url: 'https://docbook-280f2.web.app/doc-list'
+    },
+    {
+      img: 'assets/img/projects/operation-management.png',
+      headline: 'Fire Department Operation Management',
+      description: 'This project is a real-life project that helps firefighters to manage many contemporaneous operations. It is in use in practice.',
+      url: 'https://youtu.be/gZahN3QOWDs'
+    },
   ];
 
   constructor() { }

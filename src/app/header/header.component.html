@@ -3,11 +3,10 @@
     <img src="assets/img/logo_white.png" alt="">
     <span class="name-abbreviation">L.K</span>
   </a>
-  <div *ngIf="!isMobile" class="link-box mobile-d-none">
-    <a routerLink="/#skillset">Skillsetbyrouterlink</a>
-    <a href="#skillset">Skillset</a>
-    <a href="#projects">Projects</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact-form">Contact</a>
+  <div class="link-box mobile-d-none">
+    <a routerLink="/#skillset" (click)="navigation.forceNavigate('skillset')">Skillset</a>
+    <a routerLink="/#projects" (click)="navigation.forceNavigate('projects')">Projects</a>
+    <a routerLink="/#testimonials" (click)="navigation.forceNavigate('testimonials')">Testimonials</a>
+    <a routerLink="/#contact-form" (click)="navigation.forceNavigate('contact-form')">Contact</a>
   </div>
 </header>

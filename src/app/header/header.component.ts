@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from '../shared/navigation.service';
 
 
 @Component({
@@ -8,16 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  isMobile:boolean = false;
+  constructor(public navigation: NavigationService) { }
 
-  constructor(  ) { }
-
-
-  // @HostListener("window:resize", []) updateDays() {
-  //   if (window.innerWidth >= 700) {
-  //     this.isMobile = false;
-  //   } else if (window.innerWidth < 700) {
-  //     this.isMobile = true;
-  //   }
-  // }
 }

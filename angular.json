@@ -29,7 +29,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/send_mail.php"
+              "src/send_mail.php",
+              "src/.htaccess"
             ],
             "styles": [
               "src/styles.scss",

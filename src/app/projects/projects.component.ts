@@ -41,8 +41,8 @@ export class ProjectsComponent {
     {
       img: 'assets/img/projects/operation-management.png',
       headline: 'Fire Department Operation Management',
-      description: 'This project is a real-life project that helps firefighters to manage many contemporaneous operations. It is in use in practice.',
-      url: 'https://youtu.be/gZahN3QOWDs'
+      description: 'This project is a real-life project that helps firefighters to manage many contemporaneous operations. It is used in practice.',
+      url: 'https://www.youtube.com/watch?v=5ej6u-XAEzE'
     },
   ];
 

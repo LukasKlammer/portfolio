@@ -2,46 +2,26 @@
   <div class="left-container">
     <h2>Let's talk business</h2>
     <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+    <a aria-label="Chat on WhatsApp" href="https://wa.me/{{ whatsAppPhone }}?text={{ whatsAppPreWrittenMessage }}"
+      target="_blank"> <img class="whatsapp-button" alt="Chat on WhatsApp"
+        src="assets/img/WhatsAppButtonWhiteSmall.png" /> </a><br>
   </div>
   <div class="right-container">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       <div class="label-input">
         <label for="name">Name</label>
-        <input
-          type="text"
-          placeholder="Please enter your name..."
-          id="name"
-          required
-          [(ngModel)]="contact.name"
-          name="name"
-          #name="ngModel"
-        />
+        <input type="text" placeholder="Please enter your name..." id="name" required [(ngModel)]="contact.name"
+          name="name" #name="ngModel" />
       </div>
       <div class="label-input">
         <label for="email">Email</label>
-        <input
-          type="email"
-          placeholder="What is your Email address?"
-          id="email"
-          [(ngModel)]="contact.email"
-          name="email"
-          #email="ngModel"
-          pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          required
-        />
+        <input type="email" placeholder="What is your Email address?" id="email" [(ngModel)]="contact.email"
+          name="email" #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
       </div>
       <div class="label-input">
         <label for="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Your message..."
-          required
-          [(ngModel)]="contact.message"
-          rows="3"
-          name="message"
-          #message="ngModel"
-        ></textarea>
+        <textarea name="message" id="message" placeholder="Your message..." required [(ngModel)]="contact.message"
+          rows="3" name="message" #message="ngModel"></textarea>
       </div>
       <button class="primary-button" type="submit" [disabled]="!contactForm.valid">LET'S GET STARTED</button>
     </form>

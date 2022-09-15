@@ -1,11 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import * as myGlobals from '../shared/globals';
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent {
+
+  public whatsAppPreWrittenMessage: string = myGlobals.whatsAppPreWrittenMessage;
+  public whatsAppPhone: string = myGlobals.whatsAppPhone;
 
   /**
    * This is bind ngForm's InputFields in Template File

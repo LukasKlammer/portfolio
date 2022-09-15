@@ -97,6 +97,10 @@ a {
   }
 }
 
+.whatsapp-button {
+  width: 200px;
+}
+
 .black-section-container {
   padding-top: 150px;
   display: flex;
@@ -158,6 +162,10 @@ html:not([data-lt-script-installed]):not(.__lt-dummy-1):not(.__lt-dummy-2):not(.
 
   p {
     font-size: 14px;
+  }
+
+  .whatsapp-button {
+    width: 150px;
   }
 }
 
